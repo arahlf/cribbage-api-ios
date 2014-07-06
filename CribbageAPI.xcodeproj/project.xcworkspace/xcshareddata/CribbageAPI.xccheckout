@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F20E40F8-8651-4F45-B0A5-8CAF910E5A0A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CribbageAPI</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E8495C0B-2153-4566-B7B7-DA48A9BB614D</key>
+		<string>https://github.com/arahlf/cribbage-api-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CribbageAPI/CribbageAPI.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E8495C0B-2153-4566-B7B7-DA48A9BB614D</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/arahlf/cribbage-api-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E8495C0B-2153-4566-B7B7-DA48A9BB614D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E8495C0B-2153-4566-B7B7-DA48A9BB614D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cribbage-api-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

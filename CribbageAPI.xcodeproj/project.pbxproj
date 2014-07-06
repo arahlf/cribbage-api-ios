@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B9D9969196A08E3008BAB63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9D9968196A08E3008BAB63 /* Foundation.framework */; };
+		1B9D996E196A08E3008BAB63 /* CribbageAPI.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1B9D996D196A08E3008BAB63 /* CribbageAPI.h */; };
+		1B9D9970196A08E3008BAB63 /* CribbageAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9D996F196A08E3008BAB63 /* CribbageAPI.m */; };
+		1B9D9977196A08E3008BAB63 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9D9976196A08E3008BAB63 /* XCTest.framework */; };
+		1B9D9978196A08E3008BAB63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9D9968196A08E3008BAB63 /* Foundation.framework */; };
+		1B9D997A196A08E3008BAB63 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9D9979196A08E3008BAB63 /* UIKit.framework */; };
+		1B9D997D196A08E3008BAB63 /* libCribbageAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9D9965196A08E3008BAB63 /* libCribbageAPI.a */; };
+		1B9D9983196A08E3008BAB63 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B9D9981196A08E3008BAB63 /* InfoPlist.strings */; };
+		1B9D9985196A08E3008BAB63 /* CribbageAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9D9984196A08E3008BAB63 /* CribbageAPITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B9D997B196A08E3008BAB63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B9D995D196A08E3008BAB63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B9D9964196A08E3008BAB63;
+			remoteInfo = CribbageAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1B9D9963196A08E3008BAB63 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				1B9D996E196A08E3008BAB63 /* CribbageAPI.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1B9D9965196A08E3008BAB63 /* libCribbageAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCribbageAPI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B9D9968196A08E3008BAB63 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1B9D996C196A08E3008BAB63 /* CribbageAPI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CribbageAPI-Prefix.pch"; sourceTree = "<group>"; };
+		1B9D996D196A08E3008BAB63 /* CribbageAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CribbageAPI.h; sourceTree = "<group>"; };
+		1B9D996F196A08E3008BAB63 /* CribbageAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CribbageAPI.m; sourceTree = "<group>"; };
+		1B9D9975196A08E3008BAB63 /* CribbageAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CribbageAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B9D9976196A08E3008BAB63 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1B9D9979196A08E3008BAB63 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		1B9D9980196A08E3008BAB63 /* CribbageAPITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CribbageAPITests-Info.plist"; sourceTree = "<group>"; };
+		1B9D9982196A08E3008BAB63 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1B9D9984196A08E3008BAB63 /* CribbageAPITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CribbageAPITests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B9D9962196A08E3008BAB63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9D9969196A08E3008BAB63 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B9D9972196A08E3008BAB63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9D9977196A08E3008BAB63 /* XCTest.framework in Frameworks */,
+				1B9D997A196A08E3008BAB63 /* UIKit.framework in Frameworks */,
+				1B9D9978196A08E3008BAB63 /* Foundation.framework in Frameworks */,
+				1B9D997D196A08E3008BAB63 /* libCribbageAPI.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B9D995C196A08E3008BAB63 = {
+			isa = PBXGroup;
+			children = (
+				1B9D996A196A08E3008BAB63 /* CribbageAPI */,
+				1B9D997E196A08E3008BAB63 /* CribbageAPITests */,
+				1B9D9967196A08E3008BAB63 /* Frameworks */,
+				1B9D9966196A08E3008BAB63 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B9D9966196A08E3008BAB63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B9D9965196A08E3008BAB63 /* libCribbageAPI.a */,
+				1B9D9975196A08E3008BAB63 /* CribbageAPITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B9D9967196A08E3008BAB63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B9D9968196A08E3008BAB63 /* Foundation.framework */,
+				1B9D9976196A08E3008BAB63 /* XCTest.framework */,
+				1B9D9979196A08E3008BAB63 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B9D996A196A08E3008BAB63 /* CribbageAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1B9D996D196A08E3008BAB63 /* CribbageAPI.h */,
+				1B9D996F196A08E3008BAB63 /* CribbageAPI.m */,
+				1B9D996B196A08E3008BAB63 /* Supporting Files */,
+			);
+			path = CribbageAPI;
+			sourceTree = "<group>";
+		};
+		1B9D996B196A08E3008BAB63 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B9D996C196A08E3008BAB63 /* CribbageAPI-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B9D997E196A08E3008BAB63 /* CribbageAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				1B9D9984196A08E3008BAB63 /* CribbageAPITests.m */,
+				1B9D997F196A08E3008BAB63 /* Supporting Files */,
+			);
+			path = CribbageAPITests;
+			sourceTree = "<group>";
+		};
+		1B9D997F196A08E3008BAB63 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B9D9980196A08E3008BAB63 /* CribbageAPITests-Info.plist */,
+				1B9D9981196A08E3008BAB63 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B9D9964196A08E3008BAB63 /* CribbageAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B9D9988196A08E3008BAB63 /* Build configuration list for PBXNativeTarget "CribbageAPI" */;
+			buildPhases = (
+				1B9D9961196A08E3008BAB63 /* Sources */,
+				1B9D9962196A08E3008BAB63 /* Frameworks */,
+				1B9D9963196A08E3008BAB63 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CribbageAPI;
+			productName = CribbageAPI;
+			productReference = 1B9D9965196A08E3008BAB63 /* libCribbageAPI.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1B9D9974196A08E3008BAB63 /* CribbageAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B9D998B196A08E3008BAB63 /* Build configuration list for PBXNativeTarget "CribbageAPITests" */;
+			buildPhases = (
+				1B9D9971196A08E3008BAB63 /* Sources */,
+				1B9D9972196A08E3008BAB63 /* Frameworks */,
+				1B9D9973196A08E3008BAB63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B9D997C196A08E3008BAB63 /* PBXTargetDependency */,
+			);
+			name = CribbageAPITests;
+			productName = CribbageAPITests;
+			productReference = 1B9D9975196A08E3008BAB63 /* CribbageAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B9D995D196A08E3008BAB63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Alan Rahlf";
+			};
+			buildConfigurationList = 1B9D9960196A08E3008BAB63 /* Build configuration list for PBXProject "CribbageAPI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1B9D995C196A08E3008BAB63;
+			productRefGroup = 1B9D9966196A08E3008BAB63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B9D9964196A08E3008BAB63 /* CribbageAPI */,
+				1B9D9974196A08E3008BAB63 /* CribbageAPITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B9D9973196A08E3008BAB63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9D9983196A08E3008BAB63 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B9D9961196A08E3008BAB63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9D9970196A08E3008BAB63 /* CribbageAPI.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B9D9971196A08E3008BAB63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9D9985196A08E3008BAB63 /* CribbageAPITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B9D997C196A08E3008BAB63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B9D9964196A08E3008BAB63 /* CribbageAPI */;
+			targetProxy = 1B9D997B196A08E3008BAB63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1B9D9981196A08E3008BAB63 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B9D9982196A08E3008BAB63 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B9D9986196A08E3008BAB63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1B9D9987196A08E3008BAB63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B9D9989196A08E3008BAB63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CribbageAPI.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CribbageAPI/CribbageAPI-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1B9D998A196A08E3008BAB63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CribbageAPI.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CribbageAPI/CribbageAPI-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1B9D998C196A08E3008BAB63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CribbageAPI/CribbageAPI-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CribbageAPITests/CribbageAPITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1B9D998D196A08E3008BAB63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CribbageAPI/CribbageAPI-Prefix.pch";
+				INFOPLIST_FILE = "CribbageAPITests/CribbageAPITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B9D9960196A08E3008BAB63 /* Build configuration list for PBXProject "CribbageAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B9D9986196A08E3008BAB63 /* Debug */,
+				1B9D9987196A08E3008BAB63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B9D9988196A08E3008BAB63 /* Build configuration list for PBXNativeTarget "CribbageAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B9D9989196A08E3008BAB63 /* Debug */,
+				1B9D998A196A08E3008BAB63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1B9D998B196A08E3008BAB63 /* Build configuration list for PBXNativeTarget "CribbageAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B9D998C196A08E3008BAB63 /* Debug */,
+				1B9D998D196A08E3008BAB63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B9D995D196A08E3008BAB63 /* Project object */;
+}
