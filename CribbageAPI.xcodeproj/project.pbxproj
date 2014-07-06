@@ -405,6 +405,7 @@
 				1B9D998A196A08E3008BAB63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B9D998B196A08E3008BAB63 /* Build configuration list for PBXNativeTarget "CribbageAPITests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +414,7 @@
 				1B9D998D196A08E3008BAB63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
