@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B58C9C3196A152500DE6284 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B58C9C2196A152500DE6284 /* Card.m */; };
+		1B58C9CC196A44FB00DE6284 /* Cards.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B58C9CB196A44FB00DE6284 /* Cards.m */; };
+		1B58C9CE196B591F00DE6284 /* CardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B58C9CD196B591F00DE6284 /* CardTests.m */; };
 		1B9D9969196A08E3008BAB63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9D9968196A08E3008BAB63 /* Foundation.framework */; };
 		1B9D996E196A08E3008BAB63 /* CribbageAPI.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1B9D996D196A08E3008BAB63 /* CribbageAPI.h */; };
 		1B9D9970196A08E3008BAB63 /* CribbageAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9D996F196A08E3008BAB63 /* CribbageAPI.m */; };
@@ -15,7 +18,6 @@
 		1B9D997A196A08E3008BAB63 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9D9979196A08E3008BAB63 /* UIKit.framework */; };
 		1B9D997D196A08E3008BAB63 /* libCribbageAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9D9965196A08E3008BAB63 /* libCribbageAPI.a */; };
 		1B9D9983196A08E3008BAB63 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B9D9981196A08E3008BAB63 /* InfoPlist.strings */; };
-		1B9D9985196A08E3008BAB63 /* CribbageAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9D9984196A08E3008BAB63 /* CribbageAPITests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1B58C9C1196A152500DE6284 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		1B58C9C2196A152500DE6284 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		1B58C9C4196A157E00DE6284 /* Suit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Suit.h; path = ../Suit.h; sourceTree = "<group>"; };
+		1B58C9C7196A15DB00DE6284 /* Rank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rank.h; path = ../Rank.h; sourceTree = "<group>"; };
+		1B58C9CA196A44FB00DE6284 /* Cards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cards.h; sourceTree = "<group>"; };
+		1B58C9CB196A44FB00DE6284 /* Cards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cards.m; sourceTree = "<group>"; };
+		1B58C9CD196B591F00DE6284 /* CardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardTests.m; sourceTree = "<group>"; };
 		1B9D9965196A08E3008BAB63 /* libCribbageAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCribbageAPI.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B9D9968196A08E3008BAB63 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1B9D996C196A08E3008BAB63 /* CribbageAPI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CribbageAPI-Prefix.pch"; sourceTree = "<group>"; };
@@ -52,7 +61,6 @@
 		1B9D9979196A08E3008BAB63 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		1B9D9980196A08E3008BAB63 /* CribbageAPITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CribbageAPITests-Info.plist"; sourceTree = "<group>"; };
 		1B9D9982196A08E3008BAB63 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1B9D9984196A08E3008BAB63 /* CribbageAPITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CribbageAPITests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,12 @@
 			children = (
 				1B9D996D196A08E3008BAB63 /* CribbageAPI.h */,
 				1B9D996F196A08E3008BAB63 /* CribbageAPI.m */,
+				1B58C9C1196A152500DE6284 /* Card.h */,
+				1B58C9C2196A152500DE6284 /* Card.m */,
+				1B58C9CA196A44FB00DE6284 /* Cards.h */,
+				1B58C9CB196A44FB00DE6284 /* Cards.m */,
+				1B58C9C7196A15DB00DE6284 /* Rank.h */,
+				1B58C9C4196A157E00DE6284 /* Suit.h */,
 				1B9D996B196A08E3008BAB63 /* Supporting Files */,
 			);
 			path = CribbageAPI;
@@ -128,7 +142,7 @@
 		1B9D997E196A08E3008BAB63 /* CribbageAPITests */ = {
 			isa = PBXGroup;
 			children = (
-				1B9D9984196A08E3008BAB63 /* CribbageAPITests.m */,
+				1B58C9CD196B591F00DE6284 /* CardTests.m */,
 				1B9D997F196A08E3008BAB63 /* Supporting Files */,
 			);
 			path = CribbageAPITests;
@@ -224,7 +238,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B58C9CC196A44FB00DE6284 /* Cards.m in Sources */,
 				1B9D9970196A08E3008BAB63 /* CribbageAPI.m in Sources */,
+				1B58C9C3196A152500DE6284 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B9D9985196A08E3008BAB63 /* CribbageAPITests.m in Sources */,
+				1B58C9CE196B591F00DE6284 /* CardTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
