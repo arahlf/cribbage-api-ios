@@ -14,6 +14,8 @@
 @property (readonly, nonatomic, strong) NSString *displayName;
 @property (readonly, nonatomic, strong) NSArray *cards;
 
-- (id)initWithPoints:(NSInteger)points displayName:(NSString *)displayName cards:(NSArray *)cards;
++ (Score *)scoreWithPoints:(NSInteger)points displayName:(NSString *)displayName cards:(NSArray *)cards;
+
+- (NSComparisonResult)compare:(Score *)other;
 
 @end

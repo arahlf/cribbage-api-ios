@@ -10,6 +10,10 @@
 
 @implementation Score
 
++ (Score *)scoreWithPoints:(NSInteger)points displayName:(NSString *)displayName cards:(NSArray *)cards {
+    return [[Score alloc] initWithPoints:points displayName:displayName cards:cards];
+}
+
 - (id)initWithPoints:(NSInteger)points displayName:(NSString *)displayName cards:(NSArray *)cards {
     if (self = [super init]) {
         _points = points;
@@ -17,6 +21,13 @@
         _cards = cards;
     }
     return self;
+}
+
+- (NSComparisonResult)compare:(Score *)other {
+    if (self.points != other.points) {
+        return [@(self.points) compare:@(other.points)];
+    }
+    return [self.displayName compare:other.displayName];
 }
 
 @end

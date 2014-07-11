@@ -14,7 +14,7 @@
     if (cut.rank != Jack) {
         for (Card *card in hand.cards) {
             if (card.rank == Jack && card.suit == cut.suit) {
-                return @[ [[Score alloc] initWithPoints:1 displayName:@"Nobs for 1" cards:@[card, cut]] ];
+                return @[ [Score scoreWithPoints:1 displayName:@"Nobs for 1" cards:@[card, cut]] ];
             }
         }
     }

@@ -21,11 +21,11 @@
     }
     
     if (cut.suit == suit) {
-        return @[[[Score alloc] initWithPoints:5 displayName:@"Flush (5 card) for 5" cards:[hand.cards arrayByAddingObject:cut]]];
+        return @[ [Score scoreWithPoints:5 displayName:@"Flush (5 card) for 5" cards:[hand.cards arrayByAddingObject:cut]] ];
     }
     
     if (!hand.isCrib) {
-        return @[[[Score alloc] initWithPoints:4 displayName:@"Flush (4 card) for 4" cards:hand.cards]];
+        return @[ [Score scoreWithPoints:4 displayName:@"Flush (4 card) for 4" cards:hand.cards] ];
     }
     
     return @[];
