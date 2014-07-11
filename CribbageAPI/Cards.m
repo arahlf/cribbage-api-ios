@@ -9,7 +9,7 @@
 #import "Cards.h"
 
 // yes, this is totally evil... mostly just for lulz
-#define DEFINE_CARD_ACCESSOR(accessor, rankValue, suitValue) + (Card *)accessor { return [[Card alloc] initWithRank:rankValue suit:suitValue]; }
+#define DEFINE_CARD_ACCESSOR(accessor, rankValue, suitValue) + (Card *)accessor { static Card *card = nil; if (!card) { card = [[Card alloc] initWithRank:rankValue suit:suitValue]; } return card; }
 
 @implementation Cards
 
