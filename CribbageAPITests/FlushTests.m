@@ -26,43 +26,43 @@
 }
 
 - (void)testNoFlush {
-    Hand *hand = [Hand handWithCards:@[Cards.fiveOfSpades, Cards.sixOfSpades, Cards.sevenOfSpades, Cards.queenOfClubs] crib:NO];
+    Hand *hand = [Hand handWithCards:@[FIVE_OF_SPADES, SIX_OF_SPADES, SEVEN_OF_SPADES, QUEEN_OF_CLUBS] crib:NO];
     
-    NSArray *scores = [self.rule scoreHand:hand cut:Cards.fourOfHearts];
+    NSArray *scores = [self.rule scoreHand:hand cut:FOUR_OF_HEARTS];
     
     XCTAssertEqual(0, [scores count]);
 }
 
 - (void)testFourCardFlush {
-    Hand *hand = [Hand handWithCards:@[Cards.twoOfHearts, Cards.eightOfHearts, Cards.kingOfHearts, Cards.aceOfHearts] crib:NO];
+    Hand *hand = [Hand handWithCards:@[TWO_OF_HEARTS, EIGHT_OF_HEARTS, KING_OF_HEARTS, ACE_OF_HEARTS] crib:NO];
     
-    NSArray *scores = [self.rule scoreHand:hand cut:Cards.nineOfClubs];
+    NSArray *scores = [self.rule scoreHand:hand cut:NINE_OF_CLUBS];
     
     XCTAssertEqual(1, [scores count]);
     [self assertScore:scores[0] points:4 displayName:@"Flush (4 card) for 4" cardCount:4];
 }
 
 - (void)testFourCardFlushInCrib {
-    Hand *hand = [Hand handWithCards:@[Cards.twoOfHearts, Cards.eightOfHearts, Cards.kingOfHearts, Cards.aceOfHearts] crib:YES];
+    Hand *hand = [Hand handWithCards:@[TWO_OF_HEARTS, EIGHT_OF_HEARTS, KING_OF_HEARTS, ACE_OF_HEARTS] crib:YES];
     
-    NSArray *scores = [self.rule scoreHand:hand cut:Cards.nineOfClubs];
+    NSArray *scores = [self.rule scoreHand:hand cut:NINE_OF_CLUBS];
     
     XCTAssertEqual(0, [scores count]);
 }
 
 - (void)testFiveCardFlush {
-    Hand *hand = [Hand handWithCards:@[Cards.fiveOfSpades, Cards.sixOfSpades, Cards.sevenOfSpades, Cards.queenOfSpades] crib:NO];
+    Hand *hand = [Hand handWithCards:@[FIVE_OF_SPADES, SIX_OF_SPADES, SEVEN_OF_SPADES, QUEEN_OF_SPADES] crib:NO];
     
-    NSArray *scores = [self.rule scoreHand:hand cut:Cards.fourOfSpades];
+    NSArray *scores = [self.rule scoreHand:hand cut:FOUR_OF_SPADES];
     
     XCTAssertEqual(1, [scores count]);
     [self assertScore:scores[0] points:5 displayName:@"Flush (5 card) for 5" cardCount:5];
 }
 
 - (void)testFiveCardFlushInCrib {
-    Hand *hand = [Hand handWithCards:@[Cards.fiveOfSpades, Cards.sixOfSpades, Cards.sevenOfSpades, Cards.queenOfSpades] crib:YES];
+    Hand *hand = [Hand handWithCards:@[FIVE_OF_SPADES, SIX_OF_SPADES, SEVEN_OF_SPADES, QUEEN_OF_SPADES] crib:YES];
     
-    NSArray *scores = [self.rule scoreHand:hand cut:Cards.fourOfSpades];
+    NSArray *scores = [self.rule scoreHand:hand cut:FOUR_OF_SPADES];
     
     XCTAssertEqual(1, [scores count]);
     [self assertScore:scores[0] points:5 displayName:@"Flush (5 card) for 5" cardCount:5];

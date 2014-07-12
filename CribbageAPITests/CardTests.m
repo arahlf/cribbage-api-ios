@@ -15,9 +15,9 @@
 @implementation CardTests
 
 - (void)testIsEqual {
-    Card *a = [[Card alloc] initWithRank:Three suit:Hearts];
-    Card *b = [[Card alloc] initWithRank:Three suit:Hearts];
-    Card *c = [[Card alloc] initWithRank:Jack suit:Spades];
+    Card *a = [Card cardWithRank:Three suit:Hearts];
+    Card *b = [Card cardWithRank:Three suit:Hearts];
+    Card *c = [Card cardWithRank:Jack suit:Spades];
     
     XCTAssertEqualObjects(a, b);
     XCTAssertNotEqualObjects(a, c);
@@ -25,9 +25,9 @@
 }
 
 - (void)testHash {
-    Card *a = [[Card alloc] initWithRank:Five suit:Diamonds];
-    Card *b = [[Card alloc] initWithRank:Five suit:Diamonds];
-    Card *c = [[Card alloc] initWithRank:Six suit:Diamonds];
+    Card *a = [Card cardWithRank:Five suit:Diamonds];
+    Card *b = [Card cardWithRank:Five suit:Diamonds];
+    Card *c = [Card cardWithRank:Six suit:Diamonds];
     
     XCTAssertEqual([a hash], [b hash]);
     XCTAssertNotEqual([a hash], [c hash]);

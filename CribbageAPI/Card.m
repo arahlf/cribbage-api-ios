@@ -8,7 +8,25 @@
 
 #import "Card.h"
 
+static NSMutableDictionary *CARD_CACHE;
+
 @implementation Card
+
++ (void)initialize {
+    if (self == [Card class]) {
+        CARD_CACHE = [[NSMutableDictionary alloc] init];
+    }
+}
+
++ (Card *)cardWithRank:(Rank)rank suit:(Suit)suit {
+    NSString *key = [NSString stringWithFormat:@"%i-%i", rank, suit];
+    
+    if (CARD_CACHE[key] == nil) {
+        CARD_CACHE[key] = [[Card alloc] initWithRank:rank suit:suit];
+    }
+    
+    return CARD_CACHE[key];
+}
 
 - (id)initWithRank:(Rank)rank suit:(Suit)suit {
     if (self = [super init]) {
@@ -16,6 +34,21 @@
         _suit = suit;
     }
     return self;
+}
+
+- (NSInteger)pipValue {
+    switch (self.rank) {
+        case Ace: return 1;
+        case Two: return 2;
+        case Three: return 3;
+        case Four: return 4;
+        case Five: return 5;
+        case Six: return 6;
+        case Seven: return 7;
+        case Eight: return 8;
+        case Nine: return 9;
+        default: return 10;
+    }
 }
 
 - (id)copyWithZone:(NSZone *)zone {
@@ -41,6 +74,10 @@
     result = 31 * result + _suit;
     
     return result;
+}
+
+- (NSString *)debugDescription {
+    return [NSString stringWithFormat:@"Card - %i of %i", self.rank, self.suit];
 }
 
 @end

@@ -26,36 +26,36 @@
 }
 
 - (void)testTwoOfAKind {
-    Hand *hand = [Hand handWithCards:@[Cards.aceOfDiamonds, Cards.fourOfClubs, Cards.fiveOfSpades, Cards.tenOfHearts] crib:NO];
+    Hand *hand = [Hand handWithCards:@[ACE_OF_DIAMONDS, FOUR_OF_CLUBS, FIVE_OF_SPADES, TEN_OF_HEARTS] crib:NO];
     
-    NSArray *scores = [self.rule scoreHand:hand cut:Cards.tenOfDiamonds];
+    NSArray *scores = [self.rule scoreHand:hand cut:TEN_OF_DIAMONDS];
     
     XCTAssertEqual(1, [scores count]);
     [self assertScore:scores[0] points:2 displayName:@"Pair for 2" cardCount:2];
 }
 
 - (void)testThreeOfAKind {
-    Hand *hand = [Hand handWithCards:@[Cards.aceOfDiamonds, Cards.fourOfClubs, Cards.tenOfSpades, Cards.tenOfHearts] crib:NO];
+    Hand *hand = [Hand handWithCards:@[ACE_OF_DIAMONDS, FOUR_OF_CLUBS, TEN_OF_SPADES, TEN_OF_HEARTS] crib:NO];
     
-    NSArray *scores = [self.rule scoreHand:hand cut:Cards.tenOfDiamonds];
+    NSArray *scores = [self.rule scoreHand:hand cut:TEN_OF_DIAMONDS];
     
     XCTAssertEqual(1, [scores count]);
     [self assertScore:scores[0] points:6 displayName:@"Three of a kind for 6" cardCount:3];
 }
 
 - (void)testFourOfAKind {
-    Hand *hand = [Hand handWithCards:@[Cards.fourOfHearts, Cards.fourOfDiamonds, Cards.sevenOfHearts, Cards.fourOfClubs] crib:NO];
+    Hand *hand = [Hand handWithCards:@[FOUR_OF_HEARTS, FOUR_OF_DIAMONDS, SEVEN_OF_HEARTS, FOUR_OF_CLUBS] crib:NO];
     
-    NSArray *scores = [self.rule scoreHand:hand cut:Cards.fourOfSpades];
+    NSArray *scores = [self.rule scoreHand:hand cut:FOUR_OF_SPADES];
     
     XCTAssertEqual(1, [scores count]);
     [self assertScore:scores[0] points:12 displayName:@"Four of a kind for 12" cardCount:4];
 }
 
 - (void)testMultiplePairs {
-    Hand *hand = [Hand handWithCards:@[Cards.eightOfDiamonds, Cards.eightOfSpades, Cards.fiveOfHearts, Cards.eightOfHearts] crib:NO];
+    Hand *hand = [Hand handWithCards:@[EIGHT_OF_DIAMONDS, EIGHT_OF_SPADES, FIVE_OF_HEARTS, EIGHT_OF_HEARTS] crib:NO];
     
-    NSArray *scores = [self.rule scoreHand:hand cut:Cards.fiveOfClubs];
+    NSArray *scores = [self.rule scoreHand:hand cut:FIVE_OF_CLUBS];
     
     XCTAssertEqual(2, [scores count]);
     [self assertScore:scores[0] points:2 displayName:@"Pair for 2" cardCount:2];

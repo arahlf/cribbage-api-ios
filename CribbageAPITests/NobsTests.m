@@ -26,35 +26,35 @@
 }
 
 - (void)testNobs {
-    Hand *hand = [Hand handWithCards:@[Cards.twoOfClubs, Cards.eightOfSpades, Cards.jackOfDiamonds, Cards.aceOfHearts] crib:NO];
+    Hand *hand = [Hand handWithCards:@[TWO_OF_CLUBS, EIGHT_OF_SPADES, JACK_OF_DIAMONDS, ACE_OF_HEARTS] crib:NO];
     
-    NSArray *scores = [self.rule scoreHand:hand cut:Cards.fourOfDiamonds];
+    NSArray *scores = [self.rule scoreHand:hand cut:FOUR_OF_DIAMONDS];
     
     XCTAssertEqual(1, [scores count]);
     [self assertScore:scores[0] points:1 displayName:@"Nobs for 1" cardCount:2];
 }
 
 - (void)testNobsInCrib {
-    Hand *hand = [Hand handWithCards:@[Cards.twoOfClubs, Cards.eightOfSpades, Cards.jackOfDiamonds, Cards.aceOfHearts] crib:YES];
+    Hand *hand = [Hand handWithCards:@[TWO_OF_CLUBS, EIGHT_OF_SPADES, JACK_OF_DIAMONDS, ACE_OF_HEARTS] crib:YES];
     
-    NSArray *scores = [self.rule scoreHand:hand cut:Cards.fourOfDiamonds];
+    NSArray *scores = [self.rule scoreHand:hand cut:FOUR_OF_DIAMONDS];
     
     XCTAssertEqual(1, [scores count]);
     [self assertScore:scores[0] points:1 displayName:@"Nobs for 1" cardCount:2];
 }
 
 - (void)testWhenJackIsTheCut {
-    Hand *hand = [Hand handWithCards:@[Cards.twoOfClubs, Cards.eightOfSpades, Cards.fourOfDiamonds, Cards.aceOfHearts] crib:NO];
+    Hand *hand = [Hand handWithCards:@[TWO_OF_CLUBS, EIGHT_OF_SPADES, FOUR_OF_DIAMONDS, ACE_OF_HEARTS] crib:NO];
     
-    NSArray *scores = [self.rule scoreHand:hand cut:Cards.jackOfDiamonds];
+    NSArray *scores = [self.rule scoreHand:hand cut:JACK_OF_DIAMONDS];
     
     XCTAssertEqual(0, [scores count]);
 }
 
 - (void)testAintNothinThere {
-    Hand *hand = [Hand handWithCards:@[Cards.twoOfClubs, Cards.fourOfSpades, Cards.nineOfDiamonds, Cards.queenOfClubs] crib:NO];
+    Hand *hand = [Hand handWithCards:@[TWO_OF_CLUBS, FOUR_OF_SPADES, NINE_OF_DIAMONDS, QUEEN_OF_CLUBS] crib:NO];
     
-    NSArray *scores = [self.rule scoreHand:hand cut:Cards.kingOfHearts];
+    NSArray *scores = [self.rule scoreHand:hand cut:KING_OF_HEARTS];
     
     XCTAssertEqual(0, [scores count]);
 }

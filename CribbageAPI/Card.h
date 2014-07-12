@@ -15,6 +15,8 @@
 @property (readonly, nonatomic) Rank rank;
 @property (readonly, nonatomic) Suit suit;
 
-- (id)initWithRank:(Rank)rank suit:(Suit)suit;
++ (Card *)cardWithRank:(Rank)rank suit:(Suit)suit;
+
+- (NSInteger)pipValue;
 
 @end

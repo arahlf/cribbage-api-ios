@@ -11,8 +11,9 @@
 		1B06D10F196F689C0071493F /* NobsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B06D10E196F689C0071493F /* NobsTests.m */; };
 		1B06D112196F70A60071493F /* Multiple.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B06D111196F70A60071493F /* Multiple.m */; };
 		1B06D114196F710F0071493F /* MultipleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B06D113196F710F0071493F /* MultipleTests.m */; };
+		1B06D116196F9A4D0071493F /* FifteenCountTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B06D115196F9A4D0071493F /* FifteenCountTests.m */; };
+		1B06D119196F9A650071493F /* FifteenCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B06D118196F9A650071493F /* FifteenCount.m */; };
 		1B58C9C3196A152500DE6284 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B58C9C2196A152500DE6284 /* Card.m */; };
-		1B58C9CC196A44FB00DE6284 /* Cards.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B58C9CB196A44FB00DE6284 /* Cards.m */; };
 		1B58C9CE196B591F00DE6284 /* CardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B58C9CD196B591F00DE6284 /* CardTests.m */; };
 		1B58C9D3196B6AD200DE6284 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B58C9D2196B6AD200DE6284 /* Score.m */; };
 		1B58C9D6196B6B2B00DE6284 /* Hand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B58C9D5196B6B2B00DE6284 /* Hand.m */; };
@@ -56,10 +57,12 @@
 		1B06D110196F70A60071493F /* Multiple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Multiple.h; sourceTree = "<group>"; };
 		1B06D111196F70A60071493F /* Multiple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Multiple.m; sourceTree = "<group>"; };
 		1B06D113196F710F0071493F /* MultipleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleTests.m; sourceTree = "<group>"; };
+		1B06D115196F9A4D0071493F /* FifteenCountTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifteenCountTests.m; sourceTree = "<group>"; };
+		1B06D117196F9A650071493F /* FifteenCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifteenCount.h; sourceTree = "<group>"; };
+		1B06D118196F9A650071493F /* FifteenCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifteenCount.m; sourceTree = "<group>"; };
 		1B58C9C1196A152500DE6284 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		1B58C9C2196A152500DE6284 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 		1B58C9CA196A44FB00DE6284 /* Cards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cards.h; sourceTree = "<group>"; };
-		1B58C9CB196A44FB00DE6284 /* Cards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cards.m; sourceTree = "<group>"; };
 		1B58C9CD196B591F00DE6284 /* CardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardTests.m; sourceTree = "<group>"; };
 		1B58C9D0196B6A9F00DE6284 /* ScoringRule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoringRule.h; sourceTree = "<group>"; };
 		1B58C9D1196B6AD200DE6284 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 				1B06D10C196F688B0071493F /* Nobs.m */,
 				1B06D110196F70A60071493F /* Multiple.h */,
 				1B06D111196F70A60071493F /* Multiple.m */,
+				1B06D117196F9A650071493F /* FifteenCount.h */,
+				1B06D118196F9A650071493F /* FifteenCount.m */,
 			);
 			name = Scoring;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 		1B58C9DA196CD49F00DE6284 /* Scoring */ = {
 			isa = PBXGroup;
 			children = (
+				1B06D115196F9A4D0071493F /* FifteenCountTests.m */,
 				1B58C9DB196CD4AA00DE6284 /* FlushTests.m */,
 				1B06D10E196F689C0071493F /* NobsTests.m */,
 				1B06D113196F710F0071493F /* MultipleTests.m */,
@@ -170,7 +176,6 @@
 				1B58C9C1196A152500DE6284 /* Card.h */,
 				1B58C9C2196A152500DE6284 /* Card.m */,
 				1B58C9CA196A44FB00DE6284 /* Cards.h */,
-				1B58C9CB196A44FB00DE6284 /* Cards.m */,
 				1B58C9D4196B6B2B00DE6284 /* Hand.h */,
 				1B58C9D5196B6B2B00DE6284 /* Hand.m */,
 				1B58C9DD196CD4D200DE6284 /* Rank.h */,
@@ -291,7 +296,7 @@
 				1B58C9D9196CC63100DE6284 /* Flush.m in Sources */,
 				1B06D10D196F688B0071493F /* Nobs.m in Sources */,
 				1B58C9D6196B6B2B00DE6284 /* Hand.m in Sources */,
-				1B58C9CC196A44FB00DE6284 /* Cards.m in Sources */,
+				1B06D119196F9A650071493F /* FifteenCount.m in Sources */,
 				1B58C9D3196B6AD200DE6284 /* Score.m in Sources */,
 				1B58C9C3196A152500DE6284 /* Card.m in Sources */,
 				1B06D112196F70A60071493F /* Multiple.m in Sources */,
@@ -303,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B58C9DC196CD4AA00DE6284 /* FlushTests.m in Sources */,
+				1B06D116196F9A4D0071493F /* FifteenCountTests.m in Sources */,
 				1B58C9CE196B591F00DE6284 /* CardTests.m in Sources */,
 				1B58C9E4196CF4CC00DE6284 /* XCTestCase+ScoreAssertions.m in Sources */,
 				1B06D114196F710F0071493F /* MultipleTests.m in Sources */,
