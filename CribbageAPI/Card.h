@@ -17,6 +17,7 @@
 
 + (Card *)cardWithRank:(Rank)rank suit:(Suit)suit;
 
+- (NSInteger)ordinalValue;
 - (NSInteger)pipValue;
 
 @end

@@ -36,19 +36,15 @@ static NSMutableDictionary *CARD_CACHE;
     return self;
 }
 
+- (NSInteger)ordinalValue {
+    return self.rank + 1;
+}
+
 - (NSInteger)pipValue {
-    switch (self.rank) {
-        case Ace: return 1;
-        case Two: return 2;
-        case Three: return 3;
-        case Four: return 4;
-        case Five: return 5;
-        case Six: return 6;
-        case Seven: return 7;
-        case Eight: return 8;
-        case Nine: return 9;
-        default: return 10;
+    if (self.rank < Ten) {
+        return self.rank + 1;
     }
+    return 10;
 }
 
 - (id)copyWithZone:(NSZone *)zone {
