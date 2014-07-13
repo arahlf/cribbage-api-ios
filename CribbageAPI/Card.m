@@ -73,7 +73,15 @@ static NSMutableDictionary *CARD_CACHE;
 }
 
 - (NSString *)debugDescription {
-    return [NSString stringWithFormat:@"Card - %i of %i", self.rank, self.suit];
+    static NSArray *rankNames = nil;
+    static NSArray *suitNames = nil;
+    static dispatch_once_t token;
+    dispatch_once(&token, ^{
+        rankNames = @[@"Ace", @"Two", @"Three", @"Four", @"Five", @"Six", @"Seven", @"Eight", @"Nine", @"Ten", @"Jack", @"Queen", @"King"];
+        suitNames = @[@"Clubs", @"Diamonds", @"Hearts", @"Spades"];
+    });
+    
+    return [NSString stringWithFormat:@"<%@ of %@>", rankNames[self.rank], suitNames[self.suit]];
 }
 
 @end

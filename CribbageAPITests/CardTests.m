@@ -55,4 +55,11 @@
     XCTAssertEqualObjects(FIVE_OF_HEARTS, [Card cardWithRank:Five suit:Hearts]);
 }
 
+- (void)testDebugDescription {
+    XCTAssertEqualObjects(@"<Ace of Spades>", [ACE_OF_SPADES debugDescription]);
+    XCTAssertEqualObjects(@"<Eight of Diamonds>", [EIGHT_OF_DIAMONDS debugDescription]);
+    XCTAssertEqualObjects(@"<Queen of Hearts>", [QUEEN_OF_HEARTS debugDescription]);
+    XCTAssertEqualObjects(@"<Five of Clubs>", [FIVE_OF_CLUBS debugDescription]);
+}
+
 @end
