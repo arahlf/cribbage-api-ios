@@ -65,14 +65,10 @@ static NSMutableDictionary *CARD_CACHE;
 }
 
 - (NSUInteger)hash {
-    int result = 17;
-    result = 31 * result + _rank;
-    result = 31 * result + _suit;
-    
-    return result;
+    return (_rank * 1000) + _suit;
 }
 
-- (NSString *)debugDescription {
+- (NSString *)description {
     static NSArray *rankNames = nil;
     static NSArray *suitNames = nil;
     static dispatch_once_t token;
