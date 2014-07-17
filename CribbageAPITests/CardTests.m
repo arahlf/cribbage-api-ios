@@ -43,12 +43,19 @@
 }
 
 - (void)testHash {
-    Card *a = FIVE_OF_DIAMONDS;
-    Card *b = FIVE_OF_DIAMONDS;
-    Card *c = SIX_OF_DIAMONDS;
+    NSMutableSet *hashes = [[NSMutableSet alloc] init];
     
-    XCTAssertEqual([a hash], [b hash]);
-    XCTAssertNotEqual([a hash], [c hash]);
+    for (NSInteger i = 0; i < 13; i++) {
+        for (NSInteger j = 0; j < 4; j++) {
+            Card *card = [Card cardWithRank:i suit:j];
+            
+            NSNumber *hash = @([card hash]);
+            
+            [hashes addObject:hash];
+        }
+    }
+    
+    XCTAssertEqual(52, [hashes count]);
 }
 
 - (void)testCardConstantsEquality {

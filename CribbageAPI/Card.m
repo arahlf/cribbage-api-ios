@@ -65,7 +65,7 @@ static NSMutableDictionary *CARD_CACHE;
 }
 
 - (NSUInteger)hash {
-    return (_rank * 1000) + _suit;
+    return (_rank * 4) + _suit;
 }
 
 - (NSString *)description {
