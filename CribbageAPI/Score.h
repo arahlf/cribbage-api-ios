@@ -16,6 +16,8 @@
 
 + (Score *)scoreWithPoints:(NSInteger)points displayName:(NSString *)displayName cards:(NSArray *)cards;
 
++ (NSInteger)totalPoints:(NSArray *)scores;
+
 - (NSComparisonResult)compare:(Score *)other;
 
 @end

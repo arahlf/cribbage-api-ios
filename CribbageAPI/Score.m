@@ -14,6 +14,16 @@
     return [[Score alloc] initWithPoints:points displayName:displayName cards:cards];
 }
 
++ (NSInteger)totalPoints:(NSArray *)scores {
+    NSInteger totalPoints = 0;
+    
+    for (Score *score in scores) {
+        totalPoints += [score points];
+    }
+    
+    return totalPoints;
+}
+
 - (id)initWithPoints:(NSInteger)points displayName:(NSString *)displayName cards:(NSArray *)cards {
     if (self = [super init]) {
         _points = points;

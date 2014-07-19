@@ -28,6 +28,8 @@
 		1B9D9983196A08E3008BAB63 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B9D9981196A08E3008BAB63 /* InfoPlist.strings */; };
 		1BFBE81F1975D66700D76A46 /* Run.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFBE81E1975D66700D76A46 /* Run.m */; };
 		1BFBE8211975D6C100D76A46 /* RunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFBE8201975D6C100D76A46 /* RunTests.m */; };
+		1BFBE824197AB3A700D76A46 /* CribbageScoringRules.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFBE823197AB3A700D76A46 /* CribbageScoringRules.m */; };
+		1BFBE826197AB3DF00D76A46 /* CribbageScoringRulesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFBE825197AB3DF00D76A46 /* CribbageScoringRulesTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,9 @@
 		1BFBE81D1975D66700D76A46 /* Run.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Run.h; sourceTree = "<group>"; };
 		1BFBE81E1975D66700D76A46 /* Run.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Run.m; sourceTree = "<group>"; };
 		1BFBE8201975D6C100D76A46 /* RunTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTests.m; sourceTree = "<group>"; };
+		1BFBE822197AB3A700D76A46 /* CribbageScoringRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CribbageScoringRules.h; sourceTree = "<group>"; };
+		1BFBE823197AB3A700D76A46 /* CribbageScoringRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CribbageScoringRules.m; sourceTree = "<group>"; };
+		1BFBE825197AB3DF00D76A46 /* CribbageScoringRulesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CribbageScoringRulesTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +122,8 @@
 		1B58C9CF196B6A8900DE6284 /* Scoring */ = {
 			isa = PBXGroup;
 			children = (
+				1BFBE822197AB3A700D76A46 /* CribbageScoringRules.h */,
+				1BFBE823197AB3A700D76A46 /* CribbageScoringRules.m */,
 				1B58C9D7196CC63100DE6284 /* Flush.h */,
 				1B58C9D8196CC63100DE6284 /* Flush.m */,
 				1B06D10B196F688B0071493F /* Nobs.h */,
@@ -137,6 +144,7 @@
 		1B58C9DA196CD49F00DE6284 /* Scoring */ = {
 			isa = PBXGroup;
 			children = (
+				1BFBE825197AB3DF00D76A46 /* CribbageScoringRulesTests.m */,
 				1B06D115196F9A4D0071493F /* FifteenCountTests.m */,
 				1B58C9DB196CD4AA00DE6284 /* FlushTests.m */,
 				1B06D10E196F689C0071493F /* NobsTests.m */,
@@ -309,6 +317,7 @@
 				1BFBE81F1975D66700D76A46 /* Run.m in Sources */,
 				1B58C9C3196A152500DE6284 /* Card.m in Sources */,
 				1B06D112196F70A60071493F /* Multiple.m in Sources */,
+				1BFBE824197AB3A700D76A46 /* CribbageScoringRules.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BFBE826197AB3DF00D76A46 /* CribbageScoringRulesTests.m in Sources */,
 				1BFBE8211975D6C100D76A46 /* RunTests.m in Sources */,
 				1B58C9DC196CD4AA00DE6284 /* FlushTests.m in Sources */,
 				1B06D116196F9A4D0071493F /* FifteenCountTests.m in Sources */,
