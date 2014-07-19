@@ -26,6 +26,8 @@
 		1B9D997A196A08E3008BAB63 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9D9979196A08E3008BAB63 /* UIKit.framework */; };
 		1B9D997D196A08E3008BAB63 /* libCribbageAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9D9965196A08E3008BAB63 /* libCribbageAPI.a */; };
 		1B9D9983196A08E3008BAB63 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B9D9981196A08E3008BAB63 /* InfoPlist.strings */; };
+		1BFBE81F1975D66700D76A46 /* Run.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFBE81E1975D66700D76A46 /* Run.m */; };
+		1BFBE8211975D6C100D76A46 /* RunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFBE8201975D6C100D76A46 /* RunTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,9 @@
 		1B9D9979196A08E3008BAB63 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		1B9D9980196A08E3008BAB63 /* CribbageAPITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CribbageAPITests-Info.plist"; sourceTree = "<group>"; };
 		1B9D9982196A08E3008BAB63 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1BFBE81D1975D66700D76A46 /* Run.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Run.h; sourceTree = "<group>"; };
+		1BFBE81E1975D66700D76A46 /* Run.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Run.m; sourceTree = "<group>"; };
+		1BFBE8201975D6C100D76A46 /* RunTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +117,6 @@
 		1B58C9CF196B6A8900DE6284 /* Scoring */ = {
 			isa = PBXGroup;
 			children = (
-				1B58C9D0196B6A9F00DE6284 /* ScoringRule.h */,
-				1B58C9D1196B6AD200DE6284 /* Score.h */,
-				1B58C9D2196B6AD200DE6284 /* Score.m */,
 				1B58C9D7196CC63100DE6284 /* Flush.h */,
 				1B58C9D8196CC63100DE6284 /* Flush.m */,
 				1B06D10B196F688B0071493F /* Nobs.h */,
@@ -123,6 +125,11 @@
 				1B06D111196F70A60071493F /* Multiple.m */,
 				1B06D117196F9A650071493F /* FifteenCount.h */,
 				1B06D118196F9A650071493F /* FifteenCount.m */,
+				1BFBE81D1975D66700D76A46 /* Run.h */,
+				1BFBE81E1975D66700D76A46 /* Run.m */,
+				1B58C9D0196B6A9F00DE6284 /* ScoringRule.h */,
+				1B58C9D1196B6AD200DE6284 /* Score.h */,
+				1B58C9D2196B6AD200DE6284 /* Score.m */,
 			);
 			name = Scoring;
 			sourceTree = "<group>";
@@ -134,6 +141,7 @@
 				1B58C9DB196CD4AA00DE6284 /* FlushTests.m */,
 				1B06D10E196F689C0071493F /* NobsTests.m */,
 				1B06D113196F710F0071493F /* MultipleTests.m */,
+				1BFBE8201975D6C100D76A46 /* RunTests.m */,
 				1B58C9E2196CF4CC00DE6284 /* XCTestCase+ScoreAssertions.h */,
 				1B58C9E3196CF4CC00DE6284 /* XCTestCase+ScoreAssertions.m */,
 			);
@@ -298,6 +306,7 @@
 				1B58C9D6196B6B2B00DE6284 /* Hand.m in Sources */,
 				1B06D119196F9A650071493F /* FifteenCount.m in Sources */,
 				1B58C9D3196B6AD200DE6284 /* Score.m in Sources */,
+				1BFBE81F1975D66700D76A46 /* Run.m in Sources */,
 				1B58C9C3196A152500DE6284 /* Card.m in Sources */,
 				1B06D112196F70A60071493F /* Multiple.m in Sources */,
 			);
@@ -307,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BFBE8211975D6C100D76A46 /* RunTests.m in Sources */,
 				1B58C9DC196CD4AA00DE6284 /* FlushTests.m in Sources */,
 				1B06D116196F9A4D0071493F /* FifteenCountTests.m in Sources */,
 				1B58C9CE196B591F00DE6284 /* CardTests.m in Sources */,
