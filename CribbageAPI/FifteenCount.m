@@ -10,8 +10,8 @@
 
 @implementation FifteenCount
 
-- (NSArray *)scoreHand:(Hand *)hand cut:(Card *)cut {
-    NSArray *remainingCards = [hand.cards arrayByAddingObject:cut];
++ (NSArray *)scoreHand:(NSArray *)hand cut:(Card *)cut crib:(BOOL)crib {
+    NSArray *remainingCards = [hand arrayByAddingObject:cut];
     NSMutableArray *scores = [[NSMutableArray alloc] init];
     
     [self searchForFifteenCounts:@[] remainingCards:remainingCards scores:scores];
@@ -19,7 +19,7 @@
     return scores;
 }
 
-- (void)searchForFifteenCounts:(NSArray *)currentCards remainingCards:(NSArray *)remainingCards scores:(NSMutableArray *)scores {
++ (void)searchForFifteenCounts:(NSArray *)currentCards remainingCards:(NSArray *)remainingCards scores:(NSMutableArray *)scores {
     if ([self addCards:currentCards] == 15) {
         [scores addObject:[Score scoreWithPoints:2 displayName:@"Fifteen for 2" cards:currentCards]];
     }
@@ -41,7 +41,7 @@
     }
 }
 
-- (NSInteger)addCards:(NSArray *)cards {
++ (NSInteger)addCards:(NSArray *)cards {
     NSInteger count = 0;
     
     for (Card *card in cards) {

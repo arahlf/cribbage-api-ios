@@ -10,32 +10,8 @@
 
 @implementation Run
 
-- (BOOL)isRun:(NSArray *)cards {
-    if ([cards count] < 3) {
-        return NO;
-    }
-    
-    NSArray *sortedCards = [cards sortedArrayUsingComparator:^NSComparisonResult(Card *a, Card *b) {
-        return [@(a.rank) compare:@(b.rank)];
-    }];
-    
-    NSInteger lastOrdinal = [sortedCards[0] ordinalValue];
-    
-    for (NSInteger i = 1; i < [sortedCards count]; i++) {
-        NSInteger currentOrdinal = [sortedCards[i] ordinalValue];
-        
-        if (currentOrdinal == lastOrdinal + 1) {
-            lastOrdinal = currentOrdinal;
-        }
-        else {
-            return NO;
-        }
-    }
-    return YES;
-}
-
-- (NSArray *)scoreHand:(Hand *)hand cut:(Card *)cut {
-    NSArray *cards = [hand.cards arrayByAddingObject:cut];
++ (NSArray *)scoreHand:(NSArray *)hand cut:(Card *)cut crib:(BOOL)crib {
+    NSArray *cards = [hand arrayByAddingObject:cut];
     NSMutableDictionary *groups = [[NSMutableDictionary alloc] init];
     
     // store off all the cards into a groups based on their ordinal
@@ -139,6 +115,30 @@
         return @[score];
     }
     return @[];
+}
+
+- (BOOL)isRun:(NSArray *)cards {
+    if ([cards count] < 3) {
+        return NO;
+    }
+    
+    NSArray *sortedCards = [cards sortedArrayUsingComparator:^NSComparisonResult(Card *a, Card *b) {
+        return [@(a.rank) compare:@(b.rank)];
+    }];
+    
+    NSInteger lastOrdinal = [sortedCards[0] ordinalValue];
+    
+    for (NSInteger i = 1; i < [sortedCards count]; i++) {
+        NSInteger currentOrdinal = [sortedCards[i] ordinalValue];
+        
+        if (currentOrdinal == lastOrdinal + 1) {
+            lastOrdinal = currentOrdinal;
+        }
+        else {
+            return NO;
+        }
+    }
+    return YES;
 }
 
 @end

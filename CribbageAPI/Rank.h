@@ -6,8 +6,6 @@
 //  Copyright (c) 2014 Alan Rahlf. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 typedef NS_ENUM(NSInteger, Rank) {
     Ace,
     Two,

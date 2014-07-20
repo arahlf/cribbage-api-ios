@@ -12,50 +12,41 @@
 #import "XCTestCase+ScoreAssertions.h"
 
 @interface MultipleTests : XCTestCase
-
-@property (nonatomic, strong) id<ScoringRule> rule;
-
 @end
 
 @implementation MultipleTests
 
-- (void)setUp {
-    [super setUp];
-    
-    self.rule = [[Multiple alloc] init];
-}
-
 - (void)testTwoOfAKind {
-    Hand *hand = [Hand handWithCards:@[ACE_OF_DIAMONDS, FOUR_OF_CLUBS, FIVE_OF_SPADES, TEN_OF_HEARTS] crib:NO];
+    NSArray *hand = @[ACE_OF_DIAMONDS, FOUR_OF_CLUBS, FIVE_OF_SPADES, TEN_OF_HEARTS];
     
-    NSArray *scores = [self.rule scoreHand:hand cut:TEN_OF_DIAMONDS];
+    NSArray *scores = [Multiple scoreHand:hand cut:TEN_OF_DIAMONDS crib:NO];
     
     XCTAssertEqual(1, [scores count]);
     [self assertScore:scores[0] points:2 displayName:@"Pair for 2" cardCount:2];
 }
 
 - (void)testThreeOfAKind {
-    Hand *hand = [Hand handWithCards:@[ACE_OF_DIAMONDS, FOUR_OF_CLUBS, TEN_OF_SPADES, TEN_OF_HEARTS] crib:NO];
+    NSArray *hand = @[ACE_OF_DIAMONDS, FOUR_OF_CLUBS, TEN_OF_SPADES, TEN_OF_HEARTS];
     
-    NSArray *scores = [self.rule scoreHand:hand cut:TEN_OF_DIAMONDS];
+    NSArray *scores = [Multiple scoreHand:hand cut:TEN_OF_DIAMONDS crib:NO];
     
     XCTAssertEqual(1, [scores count]);
     [self assertScore:scores[0] points:6 displayName:@"Three of a kind for 6" cardCount:3];
 }
 
 - (void)testFourOfAKind {
-    Hand *hand = [Hand handWithCards:@[FOUR_OF_HEARTS, FOUR_OF_DIAMONDS, SEVEN_OF_HEARTS, FOUR_OF_CLUBS] crib:NO];
+    NSArray *hand = @[FOUR_OF_HEARTS, FOUR_OF_DIAMONDS, SEVEN_OF_HEARTS, FOUR_OF_CLUBS];
     
-    NSArray *scores = [self.rule scoreHand:hand cut:FOUR_OF_SPADES];
+    NSArray *scores = [Multiple scoreHand:hand cut:FOUR_OF_SPADES crib:NO];
     
     XCTAssertEqual(1, [scores count]);
     [self assertScore:scores[0] points:12 displayName:@"Four of a kind for 12" cardCount:4];
 }
 
 - (void)testMultiplePairs {
-    Hand *hand = [Hand handWithCards:@[EIGHT_OF_DIAMONDS, EIGHT_OF_SPADES, FIVE_OF_HEARTS, EIGHT_OF_HEARTS] crib:NO];
+    NSArray *hand = @[EIGHT_OF_DIAMONDS, EIGHT_OF_SPADES, FIVE_OF_HEARTS, EIGHT_OF_HEARTS];
     
-    NSArray *scores = [self.rule scoreHand:hand cut:FIVE_OF_CLUBS];
+    NSArray *scores = [Multiple scoreHand:hand cut:FIVE_OF_CLUBS crib:NO];
     
     XCTAssertEqual(2, [scores count]);
     [self assertScore:scores[0] points:2 displayName:@"Pair for 2" cardCount:2];

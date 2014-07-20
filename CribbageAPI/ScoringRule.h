@@ -6,12 +6,11 @@
 //  Copyright (c) 2014 Alan Rahlf. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "Hand.h"
+#import "Card.h"
 #import "Score.h"
 
 @protocol ScoringRule <NSObject>
 
-- (NSArray *)scoreHand:(Hand *)hand cut:(Card *)cut;
++ (NSArray *)scoreHand:(NSArray *)hand cut:(Card *)cut crib:(BOOL)crib;
 
 @end

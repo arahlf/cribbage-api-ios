@@ -6,8 +6,6 @@
 //  Copyright (c) 2014 Alan Rahlf. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 @interface Score : NSObject
 
 @property (readonly, nonatomic) NSInteger points;

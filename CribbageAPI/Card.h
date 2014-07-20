@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Alan Rahlf. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "Rank.h"
 #import "Suit.h"
 

@@ -11,21 +11,21 @@
 
 @implementation Flush
 
-- (NSArray *)scoreHand:(Hand *)hand cut:(Card *)cut {
-    Suit suit = ((Card *)hand.cards[0]).suit;
++ (NSArray *)scoreHand:(NSArray *)hand cut:(Card *)cut crib:(BOOL)crib {
+    Suit suit = ((Card *)hand[0]).suit;
     
-    for (Card *card in hand.cards) {
+    for (Card *card in hand) {
         if (card.suit != suit) {
             return @[];
         }
     }
     
     if (cut.suit == suit) {
-        return @[ [Score scoreWithPoints:5 displayName:@"Flush (5 card) for 5" cards:[hand.cards arrayByAddingObject:cut]] ];
+        return @[ [Score scoreWithPoints:5 displayName:@"Flush (5 card) for 5" cards:[hand arrayByAddingObject:cut]] ];
     }
     
-    if (!hand.isCrib) {
-        return @[ [Score scoreWithPoints:4 displayName:@"Flush (4 card) for 4" cards:hand.cards] ];
+    if (!crib) {
+        return @[ [Score scoreWithPoints:4 displayName:@"Flush (4 card) for 4" cards:hand] ];
     }
     
     return @[];

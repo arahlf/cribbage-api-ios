@@ -10,8 +10,8 @@
 
 @implementation Multiple
 
-- (NSArray *)scoreHand:(Hand *)hand cut:(Card *)cut {
-    NSArray *allCards = [hand.cards arrayByAddingObject:cut];
++ (NSArray *)scoreHand:(NSArray *)hand cut:(Card *)cut crib:(BOOL)crib {
+    NSArray *allCards = [hand arrayByAddingObject:cut];
     NSMutableDictionary *groups = [[NSMutableDictionary alloc] init];
     
     for (Card *card in allCards) {

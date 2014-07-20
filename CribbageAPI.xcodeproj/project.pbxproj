@@ -16,7 +16,6 @@
 		1B58C9C3196A152500DE6284 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B58C9C2196A152500DE6284 /* Card.m */; };
 		1B58C9CE196B591F00DE6284 /* CardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B58C9CD196B591F00DE6284 /* CardTests.m */; };
 		1B58C9D3196B6AD200DE6284 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B58C9D2196B6AD200DE6284 /* Score.m */; };
-		1B58C9D6196B6B2B00DE6284 /* Hand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B58C9D5196B6B2B00DE6284 /* Hand.m */; };
 		1B58C9D9196CC63100DE6284 /* Flush.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B58C9D8196CC63100DE6284 /* Flush.m */; };
 		1B58C9DC196CD4AA00DE6284 /* FlushTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B58C9DB196CD4AA00DE6284 /* FlushTests.m */; };
 		1B58C9E4196CF4CC00DE6284 /* XCTestCase+ScoreAssertions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B58C9E3196CF4CC00DE6284 /* XCTestCase+ScoreAssertions.m */; };
@@ -26,10 +25,10 @@
 		1B9D997A196A08E3008BAB63 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9D9979196A08E3008BAB63 /* UIKit.framework */; };
 		1B9D997D196A08E3008BAB63 /* libCribbageAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9D9965196A08E3008BAB63 /* libCribbageAPI.a */; };
 		1B9D9983196A08E3008BAB63 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B9D9981196A08E3008BAB63 /* InfoPlist.strings */; };
+		1BA668BC197BF43200355481 /* CribbageAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA668BB197BF43200355481 /* CribbageAPI.m */; };
+		1BA668BE197BF71900355481 /* CribbageAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA668BD197BF71900355481 /* CribbageAPITests.m */; };
 		1BFBE81F1975D66700D76A46 /* Run.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFBE81E1975D66700D76A46 /* Run.m */; };
 		1BFBE8211975D6C100D76A46 /* RunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFBE8201975D6C100D76A46 /* RunTests.m */; };
-		1BFBE824197AB3A700D76A46 /* CribbageScoringRules.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFBE823197AB3A700D76A46 /* CribbageScoringRules.m */; };
-		1BFBE826197AB3DF00D76A46 /* CribbageScoringRulesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFBE825197AB3DF00D76A46 /* CribbageScoringRulesTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +70,6 @@
 		1B58C9D0196B6A9F00DE6284 /* ScoringRule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoringRule.h; sourceTree = "<group>"; };
 		1B58C9D1196B6AD200DE6284 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
 		1B58C9D2196B6AD200DE6284 /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
-		1B58C9D4196B6B2B00DE6284 /* Hand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hand.h; sourceTree = "<group>"; };
-		1B58C9D5196B6B2B00DE6284 /* Hand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hand.m; sourceTree = "<group>"; };
 		1B58C9D7196CC63100DE6284 /* Flush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flush.h; sourceTree = "<group>"; };
 		1B58C9D8196CC63100DE6284 /* Flush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flush.m; sourceTree = "<group>"; };
 		1B58C9DB196CD4AA00DE6284 /* FlushTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlushTests.m; sourceTree = "<group>"; };
@@ -88,12 +85,12 @@
 		1B9D9979196A08E3008BAB63 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		1B9D9980196A08E3008BAB63 /* CribbageAPITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CribbageAPITests-Info.plist"; sourceTree = "<group>"; };
 		1B9D9982196A08E3008BAB63 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1BA668BA197BF43200355481 /* CribbageAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CribbageAPI.h; sourceTree = "<group>"; };
+		1BA668BB197BF43200355481 /* CribbageAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CribbageAPI.m; sourceTree = "<group>"; };
+		1BA668BD197BF71900355481 /* CribbageAPITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CribbageAPITests.m; sourceTree = "<group>"; };
 		1BFBE81D1975D66700D76A46 /* Run.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Run.h; sourceTree = "<group>"; };
 		1BFBE81E1975D66700D76A46 /* Run.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Run.m; sourceTree = "<group>"; };
 		1BFBE8201975D6C100D76A46 /* RunTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTests.m; sourceTree = "<group>"; };
-		1BFBE822197AB3A700D76A46 /* CribbageScoringRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CribbageScoringRules.h; sourceTree = "<group>"; };
-		1BFBE823197AB3A700D76A46 /* CribbageScoringRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CribbageScoringRules.m; sourceTree = "<group>"; };
-		1BFBE825197AB3DF00D76A46 /* CribbageScoringRulesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CribbageScoringRulesTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +119,6 @@
 		1B58C9CF196B6A8900DE6284 /* Scoring */ = {
 			isa = PBXGroup;
 			children = (
-				1BFBE822197AB3A700D76A46 /* CribbageScoringRules.h */,
-				1BFBE823197AB3A700D76A46 /* CribbageScoringRules.m */,
 				1B58C9D7196CC63100DE6284 /* Flush.h */,
 				1B58C9D8196CC63100DE6284 /* Flush.m */,
 				1B06D10B196F688B0071493F /* Nobs.h */,
@@ -134,9 +129,9 @@
 				1B06D118196F9A650071493F /* FifteenCount.m */,
 				1BFBE81D1975D66700D76A46 /* Run.h */,
 				1BFBE81E1975D66700D76A46 /* Run.m */,
-				1B58C9D0196B6A9F00DE6284 /* ScoringRule.h */,
 				1B58C9D1196B6AD200DE6284 /* Score.h */,
 				1B58C9D2196B6AD200DE6284 /* Score.m */,
+				1B58C9D0196B6A9F00DE6284 /* ScoringRule.h */,
 			);
 			name = Scoring;
 			sourceTree = "<group>";
@@ -144,7 +139,6 @@
 		1B58C9DA196CD49F00DE6284 /* Scoring */ = {
 			isa = PBXGroup;
 			children = (
-				1BFBE825197AB3DF00D76A46 /* CribbageScoringRulesTests.m */,
 				1B06D115196F9A4D0071493F /* FifteenCountTests.m */,
 				1B58C9DB196CD4AA00DE6284 /* FlushTests.m */,
 				1B06D10E196F689C0071493F /* NobsTests.m */,
@@ -192,8 +186,8 @@
 				1B58C9C1196A152500DE6284 /* Card.h */,
 				1B58C9C2196A152500DE6284 /* Card.m */,
 				1B58C9CA196A44FB00DE6284 /* Cards.h */,
-				1B58C9D4196B6B2B00DE6284 /* Hand.h */,
-				1B58C9D5196B6B2B00DE6284 /* Hand.m */,
+				1BA668BA197BF43200355481 /* CribbageAPI.h */,
+				1BA668BB197BF43200355481 /* CribbageAPI.m */,
 				1B58C9DD196CD4D200DE6284 /* Rank.h */,
 				1B58C9DE196CD4D200DE6284 /* Suit.h */,
 				1B9D996B196A08E3008BAB63 /* Supporting Files */,
@@ -214,6 +208,7 @@
 			children = (
 				1B58C9DA196CD49F00DE6284 /* Scoring */,
 				1B58C9CD196B591F00DE6284 /* CardTests.m */,
+				1BA668BD197BF71900355481 /* CribbageAPITests.m */,
 				1B9D997F196A08E3008BAB63 /* Supporting Files */,
 			);
 			path = CribbageAPITests;
@@ -311,13 +306,12 @@
 			files = (
 				1B58C9D9196CC63100DE6284 /* Flush.m in Sources */,
 				1B06D10D196F688B0071493F /* Nobs.m in Sources */,
-				1B58C9D6196B6B2B00DE6284 /* Hand.m in Sources */,
+				1BA668BC197BF43200355481 /* CribbageAPI.m in Sources */,
 				1B06D119196F9A650071493F /* FifteenCount.m in Sources */,
 				1B58C9D3196B6AD200DE6284 /* Score.m in Sources */,
 				1BFBE81F1975D66700D76A46 /* Run.m in Sources */,
 				1B58C9C3196A152500DE6284 /* Card.m in Sources */,
 				1B06D112196F70A60071493F /* Multiple.m in Sources */,
-				1BFBE824197AB3A700D76A46 /* CribbageScoringRules.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,8 +319,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BFBE826197AB3DF00D76A46 /* CribbageScoringRulesTests.m in Sources */,
 				1BFBE8211975D6C100D76A46 /* RunTests.m in Sources */,
+				1BA668BE197BF71900355481 /* CribbageAPITests.m in Sources */,
 				1B58C9DC196CD4AA00DE6284 /* FlushTests.m in Sources */,
 				1B06D116196F9A4D0071493F /* FifteenCountTests.m in Sources */,
 				1B58C9CE196B591F00DE6284 /* CardTests.m in Sources */,
