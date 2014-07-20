@@ -10,6 +10,4 @@
 
 @interface Flush : NSObject <ScoringRule>
 
-+ (NSArray *)scoreHand:(NSArray *)hand cut:(Card *)cut crib:(BOOL)crib;
-
 @end

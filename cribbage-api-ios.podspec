@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
   s.name         = "cribbage-api-ios"
   s.version      = "0.1.2"
-  s.summary      = "A Cribbage hand scoring API for iOS."
+  s.summary      = "CribbageAPI is a simple utility for scoring hands in Cribbage."
   s.homepage     = "https://github.com/arahlf/cribbage-api-ios"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "arahlf" => "arahlf@gmail.com" }

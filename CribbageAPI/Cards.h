@@ -10,7 +10,7 @@
 
 @interface Cards : NSObject
 
-#define CardAccessor(rankValue, suitValue) [Card cardWithRank:rankValue suit:suitValue]
+#define CardAccessor(cardRank, cardSuit) [Card cardWithRank:cardRank suit:cardSuit]
 
 #define ACE_OF_CLUBS CardAccessor(Ace, Clubs)
 #define TWO_OF_CLUBS CardAccessor(Two, Clubs)
