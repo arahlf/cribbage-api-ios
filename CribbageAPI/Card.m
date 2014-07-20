@@ -19,7 +19,7 @@ static NSMutableDictionary *CARD_CACHE;
 }
 
 + (Card *)cardWithRank:(Rank)rank suit:(Suit)suit {
-    NSString *key = [NSString stringWithFormat:@"%i-%i", rank, suit];
+    NSString *key = [NSString stringWithFormat:@"%d-%d", (NSInteger)rank, (NSInteger)suit];
     
     if (CARD_CACHE[key] == nil) {
         CARD_CACHE[key] = [[Card alloc] initWithRank:rank suit:suit];
