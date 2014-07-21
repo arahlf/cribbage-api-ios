@@ -20,11 +20,11 @@
     
     NSMutableArray *scores = [[NSMutableArray alloc] init];
     
-    [scores addObjectsFromArray:[Flush scoreHand:hand cut:cut crib:crib]];
-    [scores addObjectsFromArray:[Multiple scoreHand:hand cut:cut crib:crib]];
     [scores addObjectsFromArray:[Nobs scoreHand:hand cut:cut crib:crib]];
-    [scores addObjectsFromArray:[Run scoreHand:hand cut:cut crib:crib]];
     [scores addObjectsFromArray:[FifteenCount scoreHand:hand cut:cut crib:crib]];
+    [scores addObjectsFromArray:[Multiple scoreHand:hand cut:cut crib:crib]];
+    [scores addObjectsFromArray:[Run scoreHand:hand cut:cut crib:crib]];
+    [scores addObjectsFromArray:[Flush scoreHand:hand cut:cut crib:crib]];
     
     return scores;
 }

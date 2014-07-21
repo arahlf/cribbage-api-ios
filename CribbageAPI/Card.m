@@ -51,6 +51,14 @@ static NSMutableDictionary *CARD_CACHE;
     return self;
 }
 
+- (NSInteger)orderInDeck {
+    return (_suit * 13) + _rank;
+}
+
+- (NSComparisonResult)compare:(Card *)other {
+    return [@([self hash]) compare:@([other hash])];
+}
+
 - (BOOL)isEqual:(id)object {
     if (self == object) {
         return YES;
@@ -65,7 +73,7 @@ static NSMutableDictionary *CARD_CACHE;
 }
 
 - (NSUInteger)hash {
-    return (_rank * 4) + _suit;
+    return [self orderInDeck];
 }
 
 - (NSString *)description {

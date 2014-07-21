@@ -32,6 +32,15 @@
     XCTAssertEqual(10, [KING_OF_HEARTS pipValue]);
 }
 
+- (void)testCompare {
+    NSArray *input = @[ACE_OF_HEARTS, KING_OF_CLUBS, TWO_OF_DIAMONDS, ACE_OF_SPADES, JACK_OF_DIAMONDS];
+    
+    NSArray *actual = [input sortedArrayUsingSelector:@selector(compare:)];
+    NSArray *expected = @[KING_OF_CLUBS, TWO_OF_DIAMONDS, JACK_OF_DIAMONDS, ACE_OF_HEARTS, ACE_OF_SPADES];
+    
+    XCTAssertEqualObjects(actual, expected);
+}
+
 - (void)testIsEqual {
     Card *a = THREE_OF_HEARTS;
     Card *b = THREE_OF_HEARTS;
