@@ -8,6 +8,9 @@
 
 #import "Card.h"
 
+#define RANK_KEY @"rank"
+#define SUIT_KEY @"suit"
+
 static NSMutableDictionary *CARD_CACHE;
 
 @implementation Card
@@ -57,6 +60,18 @@ static NSMutableDictionary *CARD_CACHE;
 
 - (NSComparisonResult)compare:(Card *)other {
     return [@([self hash]) compare:@([other hash])];
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeInteger:self.rank forKey:RANK_KEY];
+    [aCoder encodeInteger:self.suit forKey:SUIT_KEY];
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    Rank rank = [aDecoder decodeIntegerForKey:RANK_KEY];
+    Suit suit = [aDecoder decodeIntegerForKey:SUIT_KEY];
+    
+    return [Card cardWithRank:rank suit:suit];
 }
 
 - (BOOL)isEqual:(id)object {

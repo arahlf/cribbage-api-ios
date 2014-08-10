@@ -9,7 +9,7 @@
 #import "Rank.h"
 #import "Suit.h"
 
-@interface Card : NSObject<NSCopying>
+@interface Card : NSObject<NSCoding, NSCopying>
 
 @property (readonly, nonatomic) Rank rank;
 @property (readonly, nonatomic) Suit suit;
