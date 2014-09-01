@@ -44,7 +44,7 @@
                 [scores addObject:[Score scoreWithPoints:12 displayName:@"Four of a kind for 12" cards:multiples]];
                 break;
             default:
-                NSAssert([multiples count] < 5, @"Invalid multiple count: %i", [multiples count]);
+                NSAssert([multiples count] < 5, @"Invalid multiple count: %lu", (unsigned long)[multiples count]);
         }
     }
     
